@@ -1,6 +1,9 @@
 ﻿
 @{
-    Layout = null;
+                /**/
+
+                Layout = null;
+                List<ECommerce.Models.Produto> produtos = ViewBag.Produtos;
 }
 
 <!DOCTYPE html>
@@ -16,10 +19,14 @@
 
     @*<a href="~/Views/Produto/Cadastrar">Cadastrar Produto</a>*@  @*CTRL + C + K = Comentar linha*@
 
-    @* Link em MVC | Razor *@
-    @Html.ActionLink("Cadastrar Produto", "Cadastrar", "Produto")
+    @foreach (var produto in produtos)
+    {
+    }
 
-    <div> 
+    @* Link em MVC | Razor *@
+    @
+
+    <div>
     </div>
 </body>
 </html>

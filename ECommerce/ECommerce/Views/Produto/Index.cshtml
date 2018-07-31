@@ -1,9 +1,9 @@
 ﻿
 @{
-                /**/
+    /**/
 
-                Layout = null;
-                List<ECommerce.Models.Produto> produtos = ViewBag.Produtos;
+    Layout = null;
+    List<ECommerce.Models.Produto> produtos = ViewBag.Produtos;
 }
 
 <!DOCTYPE html>
@@ -19,14 +19,30 @@
 
     @*<a href="~/Views/Produto/Cadastrar">Cadastrar Produto</a>*@  @*CTRL + C + K = Comentar linha*@
 
-    @foreach (var produto in produtos)
-    {
-    }
-
     @* Link em MVC | Razor *@
-    @
+    @Html.ActionLink("Cadastrar", "Cadastrar", "Produto")
 
     <div>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Categoria</th>
+            </tr>
+            @foreach (var produto in produtos)
+            {
+                <tr>
+                    <td>@produto.Nome</td>
+                    <td>@produto.Descricao</td>
+                    <td>@produto.Preco</td>
+                    <td>@produto.Categoria</td>
+
+                    <td>@Html.ActionLink("Remover", "Remover", "Produto", new { id = produto.ProdutoID }, null)</td>
+                    <td>@Html.ActionLink("Alterar", "Alterar", "Produto", new { id = produto.ProdutoID }, null)</td>
+                </tr>
+            }
+        </table>
     </div>
 </body>
 </html>

@@ -1,37 +1,33 @@
 ﻿@using ECommerce.Models;
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/Layout.cshtml";
     Produto produto = ViewBag.Produto;
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Alterar</title>
-</head>
-<body>
+<div>
     <h1>Alterar Produto</h1>
 
     @using (Html.BeginForm())
     {
-        <div>
+
+
+        <fieldset>
             @Html.Hidden("produtoID", produto.ProdutoID)
-            @Html.Label("Nome do Produto: ")
-            @Html.TextBox("txtNome", produto.Nome)<br>
+            @Html.Label("Nome do Produto: ", "Nome do Produto", new { @class = "form-group row" })
+            @Html.TextBox("txtNome", produto.Nome, null, new { @class = "form-control" })<br>
 
-            @Html.Label("Descrição do Produto: ")
-            @Html.TextBox("txtDescricao", produto.Descricao)<br>
+            @Html.Label("Descrição do Produto: ", "Descrição do Produto", new { @class = "form-group row" })
+            @Html.TextBox("txtDescricao", produto.Descricao, null, new { @class = "form-control" })<br>
 
-            @Html.Label("Preço do Produto: ")
-            @Html.TextBox("txtPreco", produto.Preco)<br>
+            @Html.Label("Preço do Produto: ", "Preço do Produto", new { @class = "form-group row" })
+            @Html.TextBox("txtPreco", produto.Preco, null, new { @class = "form-control" })<br>
 
-            @Html.Label("Categoria do Produto: ")
-            @Html.TextBox("txtCategoria", produto.Categoria)<br>
-            <input type="submit" value="Alterar" />
-        </div>
+            @Html.Label("Categoria do Produto: ", "Categoria do Produto", new { @class = "form-group row" })
+            @Html.TextBox("txtCategoria", produto.Categoria, null, new { @class = "form-control" })<br>
+            <input type="submit" value="Alterar" class = "btn btn-secondary" />
+        </fieldset>
     }
-</body>
-</html>
+</div>
+
+
+

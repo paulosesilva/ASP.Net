@@ -13,7 +13,7 @@ namespace ECommerce.Controllers
         public ActionResult Index()
         {
             ViewBag.Data = DateTime.Now;
-            ViewBag.Produtos = context.Produtos.ToList();
+            ViewBag.Produtos = produtoDAO.ListarProdutos();
             return View();
         }
 

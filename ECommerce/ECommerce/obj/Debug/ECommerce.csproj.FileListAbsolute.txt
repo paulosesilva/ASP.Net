@@ -102,3 +102,8 @@ C:\Users\Aluno\Documents\ECommerce\ECommerce\ECommerce\obj\Debug\ECommerce.Migra
 C:\Users\Aluno\Documents\ECommerce\ECommerce\ECommerce\obj\Debug\ECommerce.csproj.GenerateResource.Cache
 C:\Users\Aluno\Documents\ECommerce\ECommerce\ECommerce\obj\Debug\ECommerce.dll
 C:\Users\Aluno\Documents\ECommerce\ECommerce\ECommerce\obj\Debug\ECommerce.pdb
+C:\Users\Aluno\Desktop\ProjetoASP.NET\ECommerce\ECommerce\obj\Debug\ECommerce.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\ProjetoASP.NET\ECommerce\ECommerce\obj\Debug\ECommerce.Migrations.CriarBanco.resources
+C:\Users\Aluno\Desktop\ProjetoASP.NET\ECommerce\ECommerce\obj\Debug\ECommerce.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\ProjetoASP.NET\ECommerce\ECommerce\obj\Debug\ECommerce.dll
+C:\Users\Aluno\Desktop\ProjetoASP.NET\ECommerce\ECommerce\obj\Debug\ECommerce.pdb
